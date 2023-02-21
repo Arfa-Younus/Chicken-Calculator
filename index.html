@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chicken Calculator</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Chicken Calculator</h1>
+    <div>
+    <form>
+        <label for=""><strong> Price per kg:</strong></label>
+       <input type="text" id="pricePerKg">
+<br><br>
+<label for=""><strong> Quantity (in grams):</strong></label>
+       <input type="text" id="quantity">
+<br><br>
+      <input type="button" value="Calculate" onclick="calculatePrice()">
+    </form>
+</div>
+    <p id="result"></p>
+    <script>
+      function calculatePrice() {
+        var pricePerKg = document.getElementById("pricePerKg").value;
+        var quantity = document.getElementById("quantity").value;
+        var totalPrice = pricePerKg * (quantity / 1000);
+        document.getElementById("result").innerHTML = "Total price: " + totalPrice;
+      }
+    </script>
+  </body>
+</html>

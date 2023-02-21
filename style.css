@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(195, 112, 250);
+  }
+  
+  input[type="text"] {
+    padding: 0.2em;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    font-weight: 200;
+    border: 2px solid rgb(130, 21, 130);
+  }
+    
+  input[type="button"]{
+    padding: 0.2em 1em;
+    background-color: rgb(123, 0, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    border: 2px solid rgb(11, 2, 14);
+  }
+  
